@@ -1,0 +1,10 @@
+body{
+    font-family: Arial, Vendana,sans-serif;
+    color: #00c4ff;
+    padding: 10px;
+}
+page{
+    border: 1px solid #0090de;
+    background-color: violet;
+    padding: inherit;
+}
