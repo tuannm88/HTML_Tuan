@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+        *{
+            color: green;
+        /*    * gọi toàn bộ các thẻ*/
+        }
+        p{
+            color: blue;
+        }
+        p>a{
+            color: red;
+        /*    Gọi thẻ con của thẻ p*/
+        }
+        ul>li a{
+            background-color: violet;
+        }
+        /*thẻ con của thẻ ul và thẻ a*/
+        ul>li>a{
+            font-size: 10px;
+        }
+        /*gọi thẻ a là thẻ con của thẻ li, thẻ cháu của ul*/
+        a:hover{
+            color: #ff9900;
+        /*    gọi link liên kết trong thẻ a*/
+        }
+
+        #top{
+            border: 1px solid;
+        /*    gọi id=top*/
+        }
+        .note{
+            color: black;
+        /*    gọi class=note*/
+        }
+    </style>
+</head>
+<body>
+<h1><a id="top">Kitchen Garden Calendar</a></h1>
+<p id="introduce">Here you can read our handy guide about what to do when</p>
+<h2 class="note">Spring</h2>
+<ul>
+    <li><a href="1.Instroducing%20CSS.html">Introducing css</a></li>
+    <li><a href="2.Using-external-css.html">Using-external</a></li>
+    <li><a href="3.internal-css.html">internal</a></li>
+    <li><a href="4.quy-tac-cascade.html">quy tac</a></li>
+</ul>
+<p class="note introduce">This page was writen by
+    <a href="mail to: jon@example.org">jon@example.org</a> for
+    <a href="http://dantri.com">Dantri</a>
+</p>
+<p><a href="#top"> Top the page</a></p>
+
+</body>
+</html>
